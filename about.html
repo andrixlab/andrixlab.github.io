@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,50 +11,52 @@
     <header class="site-header">
       <a class="brand" href="index.html">Andrix Lab</a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Главная / Home</a>
-        <a href="about.html" aria-current="page">Обо мне / About</a>
-        <a href="projects.html">Проекты / Projects</a>
-        <a href="contacts.html">Контакты / Contacts</a>
+        <a href="index.html" data-i18n data-ru="Главная" data-en="Home">Главная</a>
+        <a href="about.html" aria-current="page" data-i18n data-ru="Обо мне" data-en="About">Обо мне</a>
+        <a href="projects.html" data-i18n data-ru="Проекты" data-en="Projects">Проекты</a>
+        <a href="contacts.html" data-i18n data-ru="Контакты" data-en="Contacts">Контакты</a>
       </nav>
+      <div class="language-switch" aria-label="Language switch">
+        <button class="language-button is-active" type="button" data-lang-button="ru">RU</button>
+        <button class="language-button" type="button" data-lang-button="en">EN</button>
+      </div>
     </header>
 
     <main class="page">
       <section class="page-heading">
-        <p class="section-kicker">field notes</p>
-        <h1>Обо мне / About</h1>
-        <div class="intro-pair">
-          <p>Я собираю идеи, ищу связи между ними и проверяю, какие структуры выдерживают реальность.</p>
-          <p>I collect ideas, look for relations between them, and test which structures survive contact with reality.</p>
-        </div>
+        <p class="section-kicker" data-i18n data-ru="полевые заметки" data-en="field notes">полевые заметки</p>
+        <h1 data-i18n data-ru="Обо мне" data-en="About">Обо мне</h1>
+        <p class="intro-text" data-i18n data-ru="Я собираю идеи, ищу связи между ними и проверяю, какие структуры выдерживают реальность." data-en="I collect ideas, look for relations between them, and test which structures survive contact with reality.">Я собираю идеи, ищу связи между ними и проверяю, какие структуры выдерживают реальность.</p>
       </section>
 
       <section class="principles" aria-label="Principles">
         <article>
           <span>01</span>
-          <h2>Сначала карта</h2>
-          <p>Before building, find the shape of the problem.</p>
+          <h2 data-i18n data-ru="Сначала карта" data-en="Map first">Сначала карта</h2>
+          <p data-i18n data-ru="Перед сборкой нужно найти форму задачи." data-en="Before building, find the shape of the problem.">Перед сборкой нужно найти форму задачи.</p>
         </article>
         <article>
           <span>02</span>
-          <h2>Ясность через слои</h2>
-          <p>Clarity appears when the hidden layers become visible.</p>
+          <h2 data-i18n data-ru="Ясность через слои" data-en="Clarity through layers">Ясность через слои</h2>
+          <p data-i18n data-ru="Ясность появляется, когда скрытые слои становятся видимыми." data-en="Clarity appears when the hidden layers become visible.">Ясность появляется, когда скрытые слои становятся видимыми.</p>
         </article>
         <article>
           <span>03</span>
-          <h2>Эксперимент важнее позы</h2>
-          <p>Small working experiments teach more than polished declarations.</p>
+          <h2 data-i18n data-ru="Эксперимент важнее позы" data-en="Experiment over posture">Эксперимент важнее позы</h2>
+          <p data-i18n data-ru="Маленькие рабочие опыты учат больше, чем гладкие декларации." data-en="Small working experiments teach more than polished declarations.">Маленькие рабочие опыты учат больше, чем гладкие декларации.</p>
         </article>
         <article>
           <span>04</span>
-          <h2>Системы помнят</h2>
-          <p>Every decision leaves traces in behavior, rhythm, and code.</p>
+          <h2 data-i18n data-ru="Системы помнят" data-en="Systems remember">Системы помнят</h2>
+          <p data-i18n data-ru="Каждое решение оставляет следы в поведении, ритме и коде." data-en="Every decision leaves traces in behavior, rhythm, and code.">Каждое решение оставляет следы в поведении, ритме и коде.</p>
         </article>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>Andrix Lab</span>
-      <span>thinking in layers</span>
+      <span data-i18n data-ru="мышление слоями" data-en="thinking in layers">мышление слоями</span>
     </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>

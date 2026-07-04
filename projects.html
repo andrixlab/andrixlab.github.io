@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,58 +11,60 @@
     <header class="site-header">
       <a class="brand" href="index.html">Andrix Lab</a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Главная / Home</a>
-        <a href="about.html">Обо мне / About</a>
-        <a href="projects.html" aria-current="page">Проекты / Projects</a>
-        <a href="contacts.html">Контакты / Contacts</a>
+        <a href="index.html" data-i18n data-ru="Главная" data-en="Home">Главная</a>
+        <a href="about.html" data-i18n data-ru="Обо мне" data-en="About">Обо мне</a>
+        <a href="projects.html" aria-current="page" data-i18n data-ru="Проекты" data-en="Projects">Проекты</a>
+        <a href="contacts.html" data-i18n data-ru="Контакты" data-en="Contacts">Контакты</a>
       </nav>
+      <div class="language-switch" aria-label="Language switch">
+        <button class="language-button is-active" type="button" data-lang-button="ru">RU</button>
+        <button class="language-button" type="button" data-lang-button="en">EN</button>
+      </div>
     </header>
 
     <main class="page">
       <section class="page-heading">
-        <p class="section-kicker">experiments archive</p>
-        <h1>Проекты / Projects</h1>
-        <div class="intro-pair">
-          <p>Здесь будут появляться завершённые проекты, учебные прототипы и идеи, которые ещё ищут форму.</p>
-          <p>A place for completed work, learning prototypes, and ideas still searching for their form.</p>
-        </div>
+        <p class="section-kicker" data-i18n data-ru="архив экспериментов" data-en="experiments archive">архив экспериментов</p>
+        <h1 data-i18n data-ru="Проекты" data-en="Projects">Проекты</h1>
+        <p class="intro-text" data-i18n data-ru="Здесь будут появляться завершённые проекты, учебные прототипы и идеи, которые ещё ищут форму." data-en="A place for completed work, learning prototypes, and ideas still searching for their form.">Здесь будут появляться завершённые проекты, учебные прототипы и идеи, которые ещё ищут форму.</p>
       </section>
 
       <section class="project-grid" aria-label="Project list">
         <article class="project-card">
-          <p class="status">Эксперимент / Experiment</p>
+          <p class="status" data-i18n data-ru="Эксперимент" data-en="Experiment">Эксперимент</p>
           <h2>Signal Line</h2>
-          <p>Мини-интерактив с короткими фразами, которые меняются при загрузке и по кнопке.</p>
+          <p data-i18n data-ru="Мини-интерактив с короткими фразами, которые меняются при загрузке и по кнопке." data-en="A small interactive element with short phrases that change on load and by button.">Мини-интерактив с короткими фразами, которые меняются при загрузке и по кнопке.</p>
           <p class="tags">HTML, CSS, JavaScript</p>
-          <a href="index.html#signal-title">View signal</a>
+          <a href="index.html#signal-title" data-i18n data-ru="Открыть сигнал" data-en="View signal">Открыть сигнал</a>
         </article>
         <article class="project-card">
-          <p class="status">В процессе / In progress</p>
+          <p class="status" data-i18n data-ru="В процессе" data-en="In progress">В процессе</p>
           <h2>Systems Notebook</h2>
-          <p>Черновик пространства для заметок о паттернах, решениях и наблюдениях.</p>
+          <p data-i18n data-ru="Черновик пространства для заметок о паттернах, решениях и наблюдениях." data-en="A draft space for notes about patterns, decisions, and observations.">Черновик пространства для заметок о паттернах, решениях и наблюдениях.</p>
           <p class="tags">Thinking, writing, structure</p>
-          <span class="muted-link">Link later</span>
+          <span class="muted-link" data-i18n data-ru="Ссылка позже" data-en="Link later">Ссылка позже</span>
         </article>
         <article class="project-card">
-          <p class="status">Идея / Idea</p>
+          <p class="status" data-i18n data-ru="Идея" data-en="Idea">Идея</p>
           <h2>Layer Map</h2>
-          <p>Визуальная карта связей между идеями, вопросами и маленькими экспериментами.</p>
+          <p data-i18n data-ru="Визуальная карта связей между идеями, вопросами и маленькими экспериментами." data-en="A visual map of relations between ideas, questions, and small experiments.">Визуальная карта связей между идеями, вопросами и маленькими экспериментами.</p>
           <p class="tags">Mapping, concepts, interface</p>
-          <span class="muted-link">Link later</span>
+          <span class="muted-link" data-i18n data-ru="Ссылка позже" data-en="Link later">Ссылка позже</span>
         </article>
         <article class="project-card">
-          <p class="status">Завершено / Completed</p>
+          <p class="status" data-i18n data-ru="Завершено" data-en="Completed">Завершено</p>
           <h2>Andrix Lab v1</h2>
-          <p>Первая статическая версия личного сайта на простом HTML, CSS и JavaScript.</p>
+          <p data-i18n data-ru="Первая статическая версия личного сайта на простом HTML, CSS и JavaScript." data-en="The first static version of a personal site built with plain HTML, CSS, and JavaScript.">Первая статическая версия личного сайта на простом HTML, CSS и JavaScript.</p>
           <p class="tags">Static site, GitHub Pages</p>
-          <a href="index.html">Open site</a>
+          <a href="index.html" data-i18n data-ru="Открыть сайт" data-en="Open site">Открыть сайт</a>
         </article>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>Andrix Lab</span>
-      <span>ideas under inspection</span>
+      <span data-i18n data-ru="идеи под наблюдением" data-en="ideas under inspection">идеи под наблюдением</span>
     </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>

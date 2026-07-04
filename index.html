@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,29 +12,27 @@
     <header class="site-header">
       <a class="brand" href="index.html">Andrix Lab</a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Главная / Home</a>
-        <a href="about.html">Обо мне / About</a>
-        <a href="projects.html">Проекты / Projects</a>
-        <a href="contacts.html">Контакты / Contacts</a>
+        <a href="index.html" aria-current="page" data-i18n data-ru="Главная" data-en="Home">Главная</a>
+        <a href="about.html" data-i18n data-ru="Обо мне" data-en="About">Обо мне</a>
+        <a href="projects.html" data-i18n data-ru="Проекты" data-en="Projects">Проекты</a>
+        <a href="contacts.html" data-i18n data-ru="Контакты" data-en="Contacts">Контакты</a>
       </nav>
+      <div class="language-switch" aria-label="Language switch">
+        <button class="language-button is-active" type="button" data-lang-button="ru">RU</button>
+        <button class="language-button" type="button" data-lang-button="en">EN</button>
+      </div>
     </header>
 
     <main>
       <section class="hero">
-        <div class="eyebrow">personal systems laboratory</div>
+        <div class="eyebrow" data-i18n data-ru="личная системная лаборатория" data-en="personal systems laboratory">личная системная лаборатория</div>
         <h1>Andrix</h1>
-        <p class="lead">
-          Between chaos and clarity<br>
-          <span>Между хаосом и ясностью</span>
-        </p>
-        <div class="intro-pair">
-          <p>Личная лаборатория системного мышления, вайб-кодинга и экспериментов с идеями.</p>
-          <p>A personal lab for systems thinking, vibe coding, and experiments with ideas.</p>
-        </div>
+        <p class="lead" data-i18n data-ru="Между хаосом и ясностью" data-en="Between chaos and clarity">Между хаосом и ясностью</p>
+        <p class="intro-text" data-i18n data-ru="Личная лаборатория системного мышления, вайб-кодинга и экспериментов с идеями." data-en="A personal lab for systems thinking, vibe coding, and experiments with ideas.">Личная лаборатория системного мышления, вайб-кодинга и экспериментов с идеями.</p>
         <div class="hero-actions" aria-label="Main sections">
-          <a class="button" href="about.html">Обо мне / About</a>
-          <a class="button" href="projects.html">Проекты / Projects</a>
-          <a class="button" href="contacts.html">Контакты / Contacts</a>
+          <a class="button" href="about.html" data-i18n data-ru="Обо мне" data-en="About">Обо мне</a>
+          <a class="button" href="projects.html" data-i18n data-ru="Проекты" data-en="Projects">Проекты</a>
+          <a class="button" href="contacts.html" data-i18n data-ru="Контакты" data-en="Contacts">Контакты</a>
         </div>
       </section>
 
@@ -43,13 +41,13 @@
           <p class="section-kicker" id="signal-title">signal line</p>
           <p class="signal-line" id="signalLine">the signal is below the surface</p>
         </div>
-        <button class="signal-button" id="signalButton" type="button">new signal</button>
+        <button class="signal-button" id="signalButton" type="button" data-i18n data-ru="новый сигнал" data-en="new signal">новый сигнал</button>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>Andrix Lab</span>
-      <span>static pages, open signals</span>
+      <span data-i18n data-ru="статические страницы, открытые сигналы" data-en="static pages, open signals">статические страницы, открытые сигналы</span>
     </footer>
   </body>
 </html>
